@@ -5,7 +5,7 @@ TARGET = aeronaves
 LIMPAR = rm
 
 all: objetos
-	$(CC) $(OBJS)/menus.o $(OBJS)/cadastros.o $(OBJS)/relatorios.o $(OBJS)/consultas.o $(OBJS)/utils.o $(OBJS)/arquivos.o $(OBJS)/main.o -o $(TARGET)
+	$(CC) $(OBJS)/menus.o $(OBJS)/exportar.o $(OBJS)/cadastros.o $(OBJS)/relatorios.o $(OBJS)/consultas.o $(OBJS)/utils.o $(OBJS)/arquivos.o $(OBJS)/main.o -o $(TARGET)
 
 
 objetos:
@@ -15,6 +15,7 @@ objetos:
 	$(CC) -c $(SRC)/consultas.c -o $(OBJS)/consultas.o
 	$(CC) -c $(SRC)/utils.c -o $(OBJS)/utils.o
 	$(CC) -c $(SRC)/arquivos.c -o $(OBJS)/arquivos.o
+	$(CC) -c $(SRC)/exportar.c -o $(OBJS)/exportar.o
 	$(CC) -c main.c -o $(OBJS)/main.o
 
 

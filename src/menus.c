@@ -43,6 +43,10 @@ int menu_relatorios()
     printf("2. Relatório de todas as rotas\n");
     printf("3. Listar rotas com maior número de passageiros\n");
     printf("4. Listar rotas com menor número de passageiros\n");
+    printf("5. Exportar aeronaves para CSV\n");
+    printf("6. Exportar rotas para CSV\n");
+    printf("7. Exportar aeronaves para HTML\n");
+    printf("8. Exportar rotas para HTML\n");
     printf("0. Voltar ao Menu Principal\n");
     printf("::: ");
     scanf("%i", &opc);
@@ -107,6 +111,23 @@ int menu_consultas_estatisticas()
     printf("2. Verificar percentual de voos por aeronave\n");
     printf("3. Verificar percentual de voo por destino em intervalo de datas\n");
     printf("0. Voltar ao menu anterior\n");
+    printf("::: ");
+    scanf("%i", &opc);
+    getchar();
+    return opc;
+}
+
+int menu_exportacao()
+{
+   int opc;
+
+    limpar_tela();
+    printf("...Exportar...\n");
+    printf("1. Aeronaves CSV\n");
+    printf("2. Rota CSVs\n");
+    printf("3. Aeronaves HTML\n");
+    printf("4. Rotas HTML\n");
+    printf("0. Voltar ao Menu Principal\n");
     printf("::: ");
     scanf("%i", &opc);
     getchar();
